@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HouseHold Care Service</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function validate() {
+            // Get the entered mobile number
+            var number = document.getElementById("number").value;
+            
+            // Regular expression to validate mobile number (simple example)
+            var numberPattern = /^[0-9]{10}$/;
+            
+            // Check if the mobile number matches the pattern
+            if (numberPattern.test(number)) {
+                // If valid, proceed to store the number in the database
+                // You would typically make an AJAX request to a server-side script (e.g., PHP) to handle database interaction
+                // For demonstration purposes, I'll just log the number to the console
+                console.log("Mobile number entered: " + number);
+            } else {
+                // If invalid, display an error message
+                alert("Please enter a valid 10-digit mobile number.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="./logo/pnglogo.png" alt=""></a>
+        <h1>Home Care</h1>
+        <div class="navigation">
+        
+            <a href="index.html">Home</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            
+        </div>  
+       
+    </header>
+
+    <center><h1 style="color: rgb(145, 95, 29);">Please login to continue</h1></center>
+
+
+    <div class="login">
+        <h2>Login / Sign up</h2>
+        <input type="text" placeholder=" Enter your number" id="number"><br>
+
+        <input type="checkbox"><label for="check">Get order update on Whatsapp</label><br>
+        <hr> 
+        <a href="./address/address.html"><button>Proceed</button></a>
+    </div>
+    
+</body>
+</html>

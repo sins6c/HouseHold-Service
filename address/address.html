@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://res.cloudinary.com/urbanclap/image/upload/v1467812027/uc_logo.png"
+    />
+    <link rel="stylesheet" href="../address/address.css">
+</head>
+<body>
+    <div id="xsym">
+        <i class="fa-solid fa-circle-xmark"></i>
+    </div>
+   <div id="container">
+    <div class="img_div">
+        <img src="../logo/maps.png" alt="">
+    </div>
+    <div class="content">
+        <div class="div_1">
+            <h3>Sholliganalur</h3>
+            <p>University Rd, MGR NAGAR,sholliganalur, chennai 600119, India
+            </p>
+            <button onclick="selectButton('home')">Change</button>
+        </div>
+
+        <div id="adinput">
+            <input type="text" name="" placeholder="House/Flat Number">
+            <input type="text" name="" id="" placeholder="Landmark(Optional)">
+        </div>
+        <!-- buttons -->
+        <div id="btns">
+            <p>Save as</p>
+            <button onclick="selectButton('home')" id="homeButton">Home</button>
+            <button onclick="selectButton('other')" id="otherButton">Other</button>
+        </div>
+        <!-- main btn -->
+        <div id="main_btn">
+            <a href="../booking/done.html"><button id="mainbtn">Save and proceed to slots</button></a>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
+<script>
+    let mainbtn = document.getElementById('mainbtn');
+    mainbtn.addEventListener('click', (e) => {
+        window.location.href  = "./payment.html"
+    });
+
+    let xsym = document.getElementById('xsym');
+    xsym.addEventListener('click', (e) => {
+        window.location.href = "./summary.html";
+    });
+
+    function selectButton(buttonType) {
+        if (buttonType === 'home') {
+            document.getElementById('homeButton').style.backgroundColor = 'green'; // Change color for Home button
+            document.getElementById('otherButton').style.backgroundColor = ''; // Reset color for Other button
+        } else if (buttonType === 'other') {
+            document.getElementById('homeButton').style.backgroundColor = ''; // Reset color for Home button
+            document.getElementById('otherButton').style.backgroundColor = 'green'; // Change color for Other button
+        }
+    }
+</script>

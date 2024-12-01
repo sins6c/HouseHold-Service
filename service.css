@@ -1,0 +1,95 @@
+body{
+    background-color: black;
+}
+header{
+    border: 3px solid rgb(0, 0, 0);
+    background-color:  rgb(0, 0, 0);
+    width: 1375px;
+    height: 70px;
+    color: white;
+    display: flex;
+    justify-content: space-between   ;
+}
+
+header img{ 
+    width: 100px;
+    height: 100px;
+  
+    
+}
+header h1{
+    margin-right: 870px;
+    margin-top: 25 px;
+    font-family: 'Arial', sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color:red;
+    margin-left: 6px;
+    
+    
+
+}
+
+
+/*service*/
+
+
+.service{
+    display: flex;
+    justify-content: space-around   ;
+    margin-top: 110px;
+    
+    
+}
+/* resize 
+
+.cooking{
+    width: 100%;
+    height: 100%;
+}
+.cleaning{
+    width: 150%;
+    height: 100%;
+}
+.washing{
+    width: 100%;
+    height: 100%;
+}
+.plumbing{
+    width: 12%;
+    height: 12%;
+}
+.electrician{
+    width: 155px;
+    height: 11%;
+}
+
+*/
+.cleaning{
+    width: 180px;
+    height: 250px;
+}
+.washing{
+    width: 190px;
+    height: 250px;
+}
+.plumbing{
+    width: 180px;
+    height: 250px;
+}
+.electrician{
+    width: 178px;
+    height: 250px;
+}
+.service a img{
+    border-radius: 12%;
+    border: 2px solid white;
+    
+}
+.service a img:hover{
+    
+    transition: 1s;
+    opacity: 0.7;
+}
